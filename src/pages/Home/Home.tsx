@@ -2,6 +2,7 @@ import { View, Text, FlatList } from 'react-native';
 import { styles } from './stylesHome';
 import { Header } from '../../components/Header/header';
 import { Balance } from '../../components/Balance/balance';
+import { Movements } from '../../components/Movements/movements';
 
 
 const list = [
@@ -44,7 +45,8 @@ export function Home() {
         style={styles.list}
         data={ list }  // array que será listada
         keyExtractor={ (item) => String(item.id) }  // id/chave dos item da lista. Tem que ser sempre uma string
-        renderItem={ ({item}) => <Text>{ item.label }</Text> }  // Ira passar por cada item e renderizar
+        // renderItem={ ({item}) => <Text>{ item.label }</Text> }  // Ira passar por cada item e renderizar
+        renderItem={ ({item}) => <Movements data={item}/> }  // Ira passar por cada item e renderizar
         showsVerticalScrollIndicator={false}
       />
 
