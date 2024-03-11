@@ -10,7 +10,7 @@ const list = [
     id: 1,
     label: 'Boleto conta luz',
     value: '300,99',
-    date: '17/09/2022',
+    date: '17/11/2022',
     type: 0
   },
   {
@@ -18,14 +18,14 @@ const list = [
     label: 'Pix Cliente X',
     value: '3.500.29',
     date: '12/09/2022',
-    type: 0
+    type: 1
   },
   {
     id: 3,
     label: 'Salário',
     value: '7.289,99',
-    date: '28/09/2022',
-    type: 0
+    date: '28/02/2022',
+    type: 1
   },
 ]
 
