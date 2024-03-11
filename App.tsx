@@ -1,4 +1,5 @@
-import { Home } from './src/pages/Home/Home';
+import { Home } from "./src/pages/Home/home";
+
 
 export default function App() {
   return (

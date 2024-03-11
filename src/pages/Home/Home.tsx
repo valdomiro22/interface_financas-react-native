@@ -1,17 +1,15 @@
 import { View, Text } from 'react-native';
 import { styles } from './stylesHome';
+import { Header } from '../../components/Header/header';
+import { Balance } from '../../components/Balance/balance';
+
 
 export function Home() {
   return (
     <View style={styles.container}>
-      <Text>App rodando</Text>
-      <Text>App rodando</Text>
-      <Text>App rodando</Text>
-      <Text>App rodando</Text>
-      <Text>App rodando</Text>
-      <Text>App rodando</Text>
-      <Text>App rodando</Text>
-      <Text>App rodando</Text>
+      <Header name='Lucas Silva'/>
+
+      <Balance />
     </View>
   );
 }
