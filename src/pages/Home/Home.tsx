@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native';
+import { View, Text, FlatList } from 'react-native';
 import { styles } from './stylesHome';
 import { Header } from '../../components/Header/header';
 import { Balance } from '../../components/Balance/balance';
@@ -39,6 +39,15 @@ export function Home() {
       />
 
       <Text style={styles.title}>Últimas movimentações</Text>
+      
+      <FlatList 
+        style={styles.list}
+        data={ list }  // array que será listada
+        keyExtractor={ (item) => String(item.id) }  // id/chave dos item da lista. Tem que ser sempre uma string
+        renderItem={ ({item}) => <Text>{ item.label }</Text> }  // Ira passar por cada item e renderizar
+        showsVerticalScrollIndicator={false}
+      />
+
     </View>
   );
 }
