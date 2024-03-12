@@ -8,9 +8,7 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 18, 
     fontWeight: 'bold',
-    marginLeft: 14,
-    marginEnd: 14,
-    marginTop: 14
+    margin: 14,
   },
   list: {
     marginStart: 14,
