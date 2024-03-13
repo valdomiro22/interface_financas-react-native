@@ -31,5 +31,12 @@ export const stylesMovements = StyleSheet.create({
     fontSize: 16,
     color: '#E74C3C',
     fontWeight: 'bold',
+  },
+  skeleton: {
+    marginTop: 6,
+    width: 80,
+    height: 10,
+    backgroundColor: '#DADADA',
+    borderRadius: 8
   }
 });
