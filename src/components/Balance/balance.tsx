@@ -3,6 +3,7 @@ import {
   Text,
  } from "react-native";
 import { styles } from "./stylesBalance";
+import { MotiView } from "moti";
 
 
 type tipagem = {
@@ -12,7 +13,22 @@ type tipagem = {
 
 export function Balance({saldo, gastos}: tipagem) {
   return (
-    <View style={styles.container}>
+    <MotiView 
+      style={styles.container}
+      from={{
+        rotateX: '-100deg',
+        opacity: 0,
+      }}
+      animate={{
+        rotateX: '0deg',
+        opacity: 1,
+      }}
+      transition={{
+        type: 'timing',
+        delay: 300,
+        duration: 1200,
+      }}
+    >
 
       <View style={styles.item}>
         <Text style={styles.itemTitle}>Saldo</Text>
@@ -30,6 +46,6 @@ export function Balance({saldo, gastos}: tipagem) {
         </View>
       </View>
 
-    </View>
+    </MotiView>
   ); 
 }
