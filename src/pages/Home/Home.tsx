@@ -3,6 +3,7 @@ import { styles } from './stylesHome';
 import { Header } from '../../components/Header/header';
 import { Balance } from '../../components/Balance/balance';
 import { Movements } from '../../components/Movements/movements';
+import { Actions } from '../../components/Actions/actions';
 
 
 const list = [
@@ -38,6 +39,8 @@ export function Home() {
         saldo='9.250.98'
         gastos='-527.83'
       />
+
+      <Actions />
 
       <Text style={styles.title}>Últimas movimentações</Text>
       
